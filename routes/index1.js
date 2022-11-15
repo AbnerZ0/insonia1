@@ -7,13 +7,13 @@ const ventasRouter = require('./venta.router');
 // const encargadosRouter = require('./encargado/encargado.router');
 // const clientesRouter = require('./cliente/cliente.router');
 
-function routerApi1(app) {
+function routerApi2(app) {
   //producto clase
   const routerV2 = express.Router();
-  app.use('/api1/v2', routerV2);
+  app.use('/api2/v2', routerV2);
   routerV2.use('/venta',ventasRouter);
 
 }
 
 
-module.exports = routerApi1;
+module.exports = routerApi2;

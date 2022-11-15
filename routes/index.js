@@ -7,10 +7,10 @@ const productsRouter = require('./producto.router');
 // const encargadosRouter = require('./encargado/encargado.router');
 // const clientesRouter = require('./cliente/cliente.router');
 
-function routerApi(app) {
+function routerApi1(app) {
   //producto clase
   const routerV1 = express.Router();
-  app.use('/api/v1', routerV1);
+  app.use('/api1/v1', routerV1);
   routerV1.use('/producto',productsRouter);
 
   // //TRABAJO
@@ -46,5 +46,5 @@ function routerApi(app) {
 //   routerV2.use('/venta',ventasRouter);
 // }
 
-module.exports = routerApi;
+module.exports = routerApi1;
 // module.exports = routerApi1;
